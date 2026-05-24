@@ -1,0 +1,31 @@
+# DeepSeek V4 Pro optimized OpenHands config
+# CLI-only, local runtime, maximum reasoning
+
+[core]
+runtime = "local"
+workspace_base = "/home/helios/workspace"
+enable_browser = false
+enable_default_condenser = true
+max_iterations = 500
+
+[agent]
+enable_browsing = false
+enable_jupyter = false
+enable_think = true
+enable_finish = true
+enable_cmd = true
+enable_editor = true
+enable_history_truncation = true
+
+[security]
+confirmation_mode = false
+security_analyzer = "none"
+
+[condenser]
+type = "llm"
+keep_first = 1
+max_size = 80
+
+[llm.condenser]
+model = "deepseek/deepseek-v4-pro"
+max_input_tokens = 16000
