@@ -6194,8 +6194,8 @@ wsproto = ">=1.2.0"
 [package.source]
 type = "git"
 url = "https://github.com/helios57/software-agent-sdk.git"
-reference = "7003b180ef686fcff94964308f7c688d3b172bad"
-resolved_reference = "7003b180ef686fcff94964308f7c688d3b172bad"
+reference = "3e74852f915631ea0f6dc87e0e8018f360d7c71b"
+resolved_reference = "3e74852f915631ea0f6dc87e0e8018f360d7c71b"
 subdirectory = "openhands-agent-server"
 
 [[package]]
@@ -6233,8 +6233,8 @@ boto3 = ["boto3 (>=1.35.0)"]
 [package.source]
 type = "git"
 url = "https://github.com/helios57/software-agent-sdk.git"
-reference = "7003b180ef686fcff94964308f7c688d3b172bad"
-resolved_reference = "7003b180ef686fcff94964308f7c688d3b172bad"
+reference = "3e74852f915631ea0f6dc87e0e8018f360d7c71b"
+resolved_reference = "3e74852f915631ea0f6dc87e0e8018f360d7c71b"
 subdirectory = "openhands-sdk"
 
 [[package]]
@@ -6262,8 +6262,8 @@ tree-sitter-bash = ">=0.23"
 [package.source]
 type = "git"
 url = "https://github.com/helios57/software-agent-sdk.git"
-reference = "7003b180ef686fcff94964308f7c688d3b172bad"
-resolved_reference = "7003b180ef686fcff94964308f7c688d3b172bad"
+reference = "3e74852f915631ea0f6dc87e0e8018f360d7c71b"
+resolved_reference = "3e74852f915631ea0f6dc87e0e8018f360d7c71b"
 subdirectory = "openhands-tools"
 
 [[package]]
@@ -14579,4 +14579,4 @@ cffi = ["cffi (>=1.17,<2.0) ; platform_python_implementation != \"PyPy\" and pyt
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12,<3.14"
-content-hash = "ac88fc030b4980acde77f64b325454476cf3dc044e6eb9dfe565a2f9e616b021"
+content-hash = "4db7ceaf450167945e1b7bb26bc8b20d30df25471084d34a1a1cd96b2f678bb6"

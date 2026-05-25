@@ -58,9 +58,9 @@ dependencies = [
   "numpy",
   "openai==2.24",
   "openhands-aci==0.3.3",
-  "openhands-agent-server @ git+https://github.com/helios57/software-agent-sdk.git@7003b180ef686fcff94964308f7c688d3b172bad#subdirectory=openhands-agent-server",
-  "openhands-sdk @ git+https://github.com/helios57/software-agent-sdk.git@7003b180ef686fcff94964308f7c688d3b172bad#subdirectory=openhands-sdk",
-  "openhands-tools @ git+https://github.com/helios57/software-agent-sdk.git@7003b180ef686fcff94964308f7c688d3b172bad#subdirectory=openhands-tools",
+  "openhands-agent-server @ git+https://github.com/helios57/software-agent-sdk.git@3e74852f915631ea0f6dc87e0e8018f360d7c71b#subdirectory=openhands-agent-server",
+  "openhands-sdk @ git+https://github.com/helios57/software-agent-sdk.git@3e74852f915631ea0f6dc87e0e8018f360d7c71b#subdirectory=openhands-sdk",
+  "openhands-tools @ git+https://github.com/helios57/software-agent-sdk.git@3e74852f915631ea0f6dc87e0e8018f360d7c71b#subdirectory=openhands-tools",
   "opentelemetry-api>=1.33.1",
   "opentelemetry-exporter-otlp-proto-grpc>=1.33.1",
   "orjson>=3.11.6",
@@ -246,9 +246,9 @@ e2b-code-interpreter = { version = "^2.0.0", optional = true }
 pybase62 = "^1.0.0"
 
 # V1 dependencies
-openhands-sdk = { git = "https://github.com/helios57/software-agent-sdk.git", rev = "7003b180ef686fcff94964308f7c688d3b172bad", subdirectory = "openhands-sdk" }
-openhands-agent-server = { git = "https://github.com/helios57/software-agent-sdk.git", rev = "7003b180ef686fcff94964308f7c688d3b172bad", subdirectory = "openhands-agent-server" }
-openhands-tools = { git = "https://github.com/helios57/software-agent-sdk.git", rev = "7003b180ef686fcff94964308f7c688d3b172bad", subdirectory = "openhands-tools" }
+openhands-sdk = { git = "https://github.com/helios57/software-agent-sdk.git", rev = "3e74852f915631ea0f6dc87e0e8018f360d7c71b", subdirectory = "openhands-sdk" }
+openhands-agent-server = { git = "https://github.com/helios57/software-agent-sdk.git", rev = "3e74852f915631ea0f6dc87e0e8018f360d7c71b", subdirectory = "openhands-agent-server" }
+openhands-tools = { git = "https://github.com/helios57/software-agent-sdk.git", rev = "3e74852f915631ea0f6dc87e0e8018f360d7c71b", subdirectory = "openhands-tools" }
 joserfc = ">=1.0.0"
 sqlalchemy = { extras = [ "asyncio" ], version = "^2.0.40" }
 pg8000 = "^1.31.5"
