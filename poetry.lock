@@ -6171,15 +6171,13 @@ llama = ["llama-index (>=0.12.29,<0.13.0)", "llama-index-core (>=0.12.29,<0.13.0
 
 [[package]]
 name = "openhands-agent-server"
-version = "1.22.1"
+version = "1.23.0"
 description = "OpenHands Agent Server - REST/WebSocket interface for OpenHands AI Agent"
 optional = false
 python-versions = ">=3.12"
 groups = ["main"]
-files = [
-    {file = "openhands_agent_server-1.22.1-py3-none-any.whl", hash = "sha256:a886e314ef64d209e4acf8fac3ee258feb37f8c5ebac375812d3e96274bfcdfe"},
-    {file = "openhands_agent_server-1.22.1.tar.gz", hash = "sha256:ccf534052fa920a877055e570061ef68a1185850f576e82e11e46171ea63bfd4"},
-]
+files = []
+develop = false
 
 [package.dependencies]
 aiosqlite = ">=0.19"
@@ -6193,17 +6191,22 @@ uvicorn = ">=0.31.1"
 websockets = ">=12"
 wsproto = ">=1.2.0"
 
+[package.source]
+type = "git"
+url = "https://github.com/helios57/software-agent-sdk.git"
+reference = "b384fa3acbdc7addf7506fac73d3143090e47896"
+resolved_reference = "b384fa3acbdc7addf7506fac73d3143090e47896"
+subdirectory = "openhands-agent-server"
+
 [[package]]
 name = "openhands-sdk"
-version = "1.22.1"
+version = "1.23.0"
 description = "OpenHands SDK - Core functionality for building AI agents"
 optional = false
 python-versions = ">=3.12"
 groups = ["main"]
-files = [
-    {file = "openhands_sdk-1.22.1-py3-none-any.whl", hash = "sha256:0d77190ff1e4f5face22ed284cdc54927e6db708825d6b35c961e9410aebdd52"},
-    {file = "openhands_sdk-1.22.1.tar.gz", hash = "sha256:1b64c5738182d4f22f1fe3ef0a0f0997ebe74c856fef5d1ac4a685945c2f6eca"},
-]
+files = []
+develop = false
 
 [package.dependencies]
 agent-client-protocol = ">=0.8.1"
@@ -6220,25 +6223,31 @@ pydantic = ">=2.12.5"
 python-frontmatter = ">=1.1.0"
 python-json-logger = ">=3.3.0"
 tenacity = ">=9.1.2"
+tree-sitter = ">=0.24.0"
+tree-sitter-bash = ">=0.25"
 websockets = ">=12"
 
 [package.extras]
 boto3 = ["boto3 (>=1.35.0)"]
 
+[package.source]
+type = "git"
+url = "https://github.com/helios57/software-agent-sdk.git"
+reference = "b384fa3acbdc7addf7506fac73d3143090e47896"
+resolved_reference = "b384fa3acbdc7addf7506fac73d3143090e47896"
+subdirectory = "openhands-sdk"
+
 [[package]]
 name = "openhands-tools"
-version = "1.22.1"
+version = "1.23.0"
 description = "OpenHands Tools - Runtime tools for AI agents"
 optional = false
 python-versions = ">=3.12"
 groups = ["main"]
-files = [
-    {file = "openhands_tools-1.22.1-py3-none-any.whl", hash = "sha256:25daab0cf9c3909a21b05e29385e415de157eba975f0b280f2dd3ea1dfafcc3a"},
-    {file = "openhands_tools-1.22.1.tar.gz", hash = "sha256:452761ace7c4906cde889cf6ebf32e94674bf69a9f954423c0243f6b2996fca3"},
-]
+files = []
+develop = false
 
 [package.dependencies]
-bashlex = ">=0.18"
 binaryornot = ">=0.4.4"
 browser-use = ">=0.8.0"
 cachetools = "*"
@@ -6247,6 +6256,15 @@ libtmux = ">=0.53.0"
 openhands-sdk = "*"
 pydantic = ">=2.11.7"
 tom-swe = ">=1.0.3"
+tree-sitter = ">=0.24"
+tree-sitter-bash = ">=0.23"
+
+[package.source]
+type = "git"
+url = "https://github.com/helios57/software-agent-sdk.git"
+reference = "b384fa3acbdc7addf7506fac73d3143090e47896"
+resolved_reference = "b384fa3acbdc7addf7506fac73d3143090e47896"
+subdirectory = "openhands-tools"
 
 [[package]]
 name = "openpyxl"
@@ -13409,6 +13427,28 @@ docs = ["sphinx (>=8.1,<9.0)", "sphinx-book-theme"]
 tests = ["tree-sitter-html (>=0.23.2)", "tree-sitter-javascript (>=0.23.1)", "tree-sitter-json (>=0.24.8)", "tree-sitter-python (>=0.23.6)", "tree-sitter-rust (>=0.23.2)"]
 
 [[package]]
+name = "tree-sitter-bash"
+version = "0.25.1"
+description = "Bash grammar for tree-sitter"
+optional = false
+python-versions = ">=3.10"
+groups = ["main"]
+files = [
+    {file = "tree_sitter_bash-0.25.1-cp310-abi3-macosx_10_9_x86_64.whl", hash = "sha256:0e6235f59e366d220dde7d830196bed597d01e853e44d8ccd1a82c5dd2500acf"},
+    {file = "tree_sitter_bash-0.25.1-cp310-abi3-macosx_11_0_arm64.whl", hash = "sha256:f4a34a6504c7c5b2a9b8c5c4065531dea19ca2c35026e706cf2eeeebe2c92512"},
+    {file = "tree_sitter_bash-0.25.1-cp310-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:e76c4cfb20b076552406782b7f8c2a3946835993df0a44df006de54b7030c7dc"},
+    {file = "tree_sitter_bash-0.25.1-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:3f484c4bb8796cde7a87ca351e6116f09653edac0eb3c6d238566359dd28b117"},
+    {file = "tree_sitter_bash-0.25.1-cp310-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:5e76af6df46d958c7f5b6d5884c9743218e3902a00ccb493ec92728b1084430b"},
+    {file = "tree_sitter_bash-0.25.1-cp310-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:a3332d71c7b7d5f78259b19d02d0ea111fcb82b72712ee4a93aaa5b226d3f0a8"},
+    {file = "tree_sitter_bash-0.25.1-cp310-abi3-win_amd64.whl", hash = "sha256:52a6802d9218f86278aa3e8b459c3abdad67eed0fde1f9f13aca5b6c634217a6"},
+    {file = "tree_sitter_bash-0.25.1-cp310-abi3-win_arm64.whl", hash = "sha256:59115057ec2bae319e8082ff29559861045002964c3431ccb0fc92aa4bc9bccb"},
+    {file = "tree_sitter_bash-0.25.1.tar.gz", hash = "sha256:bfc0bdaa77bc1e86e3c6652e5a6e140c40c0a16b84185c2b63ad7cd809b88f14"},
+]
+
+[package.extras]
+core = ["tree-sitter (>=0.24,<1.0)"]
+
+[[package]]
 name = "tree-sitter-c-sharp"
 version = "0.23.1"
 description = "C# grammar for tree-sitter"
@@ -14539,4 +14579,4 @@ cffi = ["cffi (>=1.17,<2.0) ; platform_python_implementation != \"PyPy\" and pyt
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12,<3.14"
-content-hash = "31ab69356a11bde71bb393134ca64b5744901038a1742b299f5cc9242de562a3"
+content-hash = "1b6390648c73549202d0e6500b36127779bfe386ede8484edf81211657cabf3e"
